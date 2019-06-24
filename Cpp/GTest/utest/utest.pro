@@ -7,8 +7,6 @@ SOURCES += \
     ClassATest.cpp \
     ../app/classa.cpp
 
-#INCLUDEPATH += /media/Dokumenty/Moje Programy/Narzędzia/GTest/googletest-release-1.8.1/googletest/include/
-
 DISTFILES +=
 
 LIBS += -lgtest_main -lgtest -lpthread
