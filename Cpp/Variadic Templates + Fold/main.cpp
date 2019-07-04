@@ -28,8 +28,16 @@ void fun2(Arg arg, Others ... others)
     fun2(others...);
 }
 
+// Sumowanie przez folding (od c++17)
+template<typename ... Args>
+auto sum(Args ... arg)
+{
+	return (arg + ...);
+}
+
 int main()
 {
     fun("1", "d", "fd");
     fun2(1u, 4.4f, "fd");
+	cout << "sumator fold: " << sum(1, 3.3, 999) << endl;
 }
