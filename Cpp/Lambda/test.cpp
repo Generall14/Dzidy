@@ -17,10 +17,16 @@ int main()
 // 	auto fun4 = [z](){z++;}; Błąd kompilacji, z jest read-olny
 	auto fun5 = [&](){z++;}; // wszystko
 // 	auto fun6 = [=](){z++;}; Błąd kompilacji, z jest read-olny
+	auto fun7 = [z]()mutable{z++;}; // Kopia?
+	auto fun8 = [=]()mutable{z++;}; // 
 	cout << z << endl;
 	fun3();
 	cout << z << endl;
 	fun5();
+	cout << z << endl;
+	fun7();
+	cout << z << endl;
+	fun8();
 	cout << z << endl;
 	
 	return 0;
