@@ -14,6 +14,10 @@ s1 = '_ %s _ %i' % ('str1', 22)
 print(s1)
 s2 = '{0} {1} {0}'.format("s0", "s1")
 print(s2)
+print(r"a\nb") # surowy łańcuch znaków
+print(b"asd") # bitowy łańcuch znaków
+print(ord('a')) # na ascii
+print(chr(115)) # z ascii
 print()
 
 #==== Bazy liczboe ================================================
@@ -32,4 +36,14 @@ print()
 #==== Listy składane ==============================================
 l = [x**2 for x in range(5)]
 print(l)
+print()
+
+#==== Wycinki =====================================================
+s = "1234567"
+print(s[0::2]) # od ; do ; skok
+print()
+
+#==== Argumenty wywołania =========================================
+import sys
+print(sys.argv)
 print()
