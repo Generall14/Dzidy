@@ -47,3 +47,27 @@ print()
 import sys
 print(sys.argv)
 print()
+
+#==== Iteracja z indeksem =========================================
+tab = ["aaa", "bbb", "ccc", 6, 66, 666]
+for (index, val) in enumerate(tab):
+	print("index: {}, value: {}".format(index, val))
+print()
+	
+#==== Else w pętlach ==============================================
+for i in range(3):
+	print(i)
+else:
+	print("else 1")
+for i in range(3):
+	print(i)
+	break
+else:
+	print('else 2')
+print()
+
+#==== Alternatywa dla pass (tylko P3) =============================
+def funP():
+	...
+funP()
+
