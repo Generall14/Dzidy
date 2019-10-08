@@ -17,3 +17,14 @@ fun2 = dec(fun2)
 
 print(fun())
 print(fun2())
+print('-----------------')
+
+def tracer(fun):
+	print("call: {}".format(fun.__name__))
+	return fun
+
+@tracer
+def fun3():
+	print("fun3 body")
+
+fun3()

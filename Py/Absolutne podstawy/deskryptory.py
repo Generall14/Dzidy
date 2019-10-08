@@ -5,9 +5,9 @@ class Dsc:
 	def __get__(self, inst, owner):
 		print("get...")
 		return self.value
-	def __set__(self, inst, owner):
+	def __set__(self, inst, value):
 		print("set...")
-		self.value = owner
+		self.value = value
 
 class Cls:
 	w = Dsc()
